@@ -9,7 +9,41 @@
 <body>
     <div class="page">
         <% include components/top.inc.ejs %>
-        <div class="content-wrap">banners</div>
+        <div class="content-wrap">
+            <div>
+                <form action="?" method="post">
+                    标题：<input type="text" name="title"><br>
+                    描述：<textarea name="description"></textarea><br>
+                    链接：<input type="text" name="href">
+                    <input type="submit" value="添加">
+                </form>
+            </div>
+            <table border="1" width='100%'>
+                <thead>
+                    <th>ID</th>
+                    <th>标题</th>
+                    <th>描述</th>
+                    <th>链接</th>
+                    <th>操作</th>
+                </thead>
+                <tbody>
+                    <% for(var i=0;i<banners.length;i++){ %>
+                    <tr>
+                        <td><%= banners[i].ID %></td>
+                        <td><%= banners[i].title %></td>
+                        <td><%= banners[i].description %></td>
+                        <th><%= banners[i].href %></th>
+                        <td>
+                            <!-- '?'只当前路径地址 -->
+                            <a href="?act=mod&id=<%= banners[i].ID%>">修改</a>
+                            <a href="?act=del&id=<%= banners[i].ID%>" onclick="return confirm('确定删除吗')">删除</a>
+                        </td>
+                    </tr>
+                    <% } %>
+                </tbody>
+            </table>
+            <div>修改</div>
+        </div>
     </div>
 </body>
 </html>

@@ -44,7 +44,47 @@ module.exports=function(){
         res.render('admin/index.ejs',{})
     })
     router.get('/banners',(req,res)=>{
-        res.render('admin/banners.ejs',{})
+        switch(req.query.act){
+            case 'mod':
+                break;
+            case 'del':
+                db.query(`DELETE FROM banner_table WHERE ID=${req.query.id}`,(err,data)=>{
+                    if(err){
+                        console.error(err)
+                        res.status(500).send('database error').end()
+                    }else{
+                        res.redirect('/admin/banners')
+                    }
+                })
+                break;
+            default:
+            db.query('SELECT * FROM banner_table',(err,banners)=>{
+                if(err){
+                    console.error(err)
+                    res.status(500).send('database error').end()
+                }else{
+                    res.render('admin/banners.ejs',{banners})
+                }
+            })
+            break;
+        }
+    })
+    router.post('/banners',(req,res)=>{
+        var title = req.body.title
+        var description = req.body.description
+        var href = req.body.href
+        if(!title || !description || !href){
+            res.status(400).send('参数有错').end()
+        }else{
+            db.query(`INSERT INTO banner_table (title,description,href) VALUE('${title}','${description}','${href}')`,(err,data)=>{
+                if(err){
+                    console.error(err)
+                    res.status(500).send('database error').end()
+                }else{
+                    res.redirect('/admin/banners')
+                }
+            })
+        }
     })
     return router
 }
