@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <style>
+        .shadow{position: fixed;width: 100%; height: 100%; background: #000; opacity: 0.3; left: 0; top:0;}
+        .mod_dialog{width: 300px; height: 200px; border: 1px solid black; background: #fff; position: fixed; left: 50%; top: 50%; margin-left: -150px; margin-top: -100px;} 
+    </style>
 </head>
 <body>
     <div class="page">
@@ -34,7 +38,6 @@
                         <td><%= banners[i].description %></td>
                         <th><%= banners[i].href %></th>
                         <td>
-                            <!-- '?'只当前路径地址 -->
                             <a href="?act=mod&id=<%= banners[i].ID%>">修改</a>
                             <a href="?act=del&id=<%= banners[i].ID%>" onclick="return confirm('确定删除吗')">删除</a>
                         </td>
@@ -42,8 +45,19 @@
                     <% } %>
                 </tbody>
             </table>
-            <div>修改</div>
-        </div>
+            <% if(typeof mod_data!='undefined'){%>
+                <div class="shadow"></div>
+                <div class="mod_dialog">
+                    <form action="?" method="post">
+                            <input type="hidden" name="mod_id" value="<%= mod_data.ID %>">
+                            标题：<input type="text" name="title" value="<%= mod_data.title %>"><br>
+                            描述：<textarea name="description"><%= mod_data.description %></textarea><br>
+                            链接：<input type="text" name="href" value="<%= mod_data.href %>">
+                            <input type="submit" value="修改">
+                            <a href="/admin/banners">取消修改</a>
+                    </form>
+                </div>
+            <% } %>
     </div>
 </body>
 </html>

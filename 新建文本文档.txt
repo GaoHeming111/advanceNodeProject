@@ -1,0 +1,7 @@
+            <%= mod_data.ID %>
+            <form action="?" method="post">
+                    标题：<input type="text" name="title" value="<%= mod_data.title %>"><br>
+                    描述：<textarea name="description"><%= mod_data.description %></textarea><br>
+                    链接：<input type="text" name="href" value="<%= mod_data.href %>">
+                    <input type="submit" value="添加">
+            </form>
