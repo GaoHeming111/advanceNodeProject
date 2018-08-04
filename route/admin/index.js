@@ -10,11 +10,11 @@ module.exports=function(){
             next()
         }
     })
-    
     router.get('/',(req,res)=>{
         res.render('admin/index.ejs',{})
     })
     router.use('/login',require('./login.js')())
     router.use('/banners',require('./banners.js')())
+    router.use('/custom',require('./custom.js')())
     return router
 }
