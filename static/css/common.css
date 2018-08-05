@@ -1,0 +1,29 @@
+body,html{height: 100%;}
+*{ list-style:none; margin:0; padding:0; border:0;}
+body{ margin:0; font-size:12px; font-family:"微软雅黑";  color:#000;}
+img{border:0;}
+a{text-decoration: none;}
+
+/*右侧固定*/
+#rightFixed{ display: none; position: fixed; right: 0px; bottom:50px; width:50px;}
+#rightFixed li{width: 50px; height: 50px; margin-bottom:5px; line-height: 50px; text-align: center; background: #FD5032; border-radius:4px;}
+#rightFixed li a{color:#292929; display: block; font-size: 14px;}
+#rightFixed #Gohome{transition: background 0.5s;background-color: #ddd;}
+#rightFixed #Gohome:hover{cursor: pointer; background: #FD5032;}
+/*footer*/
+footer{width: 100%; height:450px; background:#1f1f1f ;}
+footer .foot{ width: 50%; height: 300px; margin: 0 auto;}
+footer .foot .foot_ul2{width: 100%;}
+footer .foot .foot_ul2 div{width: 33.3%; float: left; height: 300px; text-align: center;}
+footer .foot .foot_ul2 div .foot_ul1{ margin: 0 auto; height: 300px;}
+footer .foot .foot_ul2 div .foot_ul1 li{line-height:25px;}
+footer .foot .foot_ul2 div .foot_ul1 li:nth-child(3){padding-top: 20px;}
+footer .foot .foot_ul2 div .foot_ul1 li a{ color: #c2c2c2;}
+footer .foot .foot_ul2 div .foot_ul1 li a:hover{ color:white;}
+footer .foot .foot_ul2 div .foot_ul1 .foot_ul1_li1{background: #1f1f1f; display: block; transition: background 0.5s; width: 80px; margin:8% auto; height: 25px; line-height: 25px; color: white; border: 1px solid white;}
+footer .foot .foot_ul2 div .foot_ul1 .foot_ul1_li1:hover{ background: #FD5032;width: 80px; margin:8% auto; height: 25px; line-height: 25px; color: white; border: 1px solid #FD5032;}
+footer .foot .foot_ul2 div .foot_ul1 .foot_ul1_li2{ display: block; width: 80px; transition: background 0.5s; margin: 8% auto; height: 25px; line-height: 25px; background: black; color: #FD5032; border: 1px solid black;}
+footer .foot .foot_ul2 div .foot_ul1 .foot_ul1_li2:hover{ background: #FD5032; display: block; width: 80px; margin: 8% auto; height: 25px; line-height: 25px; background: #FD5032; color: white; border: 1px solid black;}
+footer .foot_text{width: 50%; text-align: center; color: #c2c2c2; margin:0 auto; padding-top: 3%; font-size: 16px; }
+footer .foot_text .foot_text_logo{width: 100%; font-size: 10px; padding-top:3%; overflow: hidden;}
+footer .foot_text .foot_text_logo li{float: left;}

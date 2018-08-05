@@ -1,0 +1,77 @@
+/*首页*/
+/*index_header*/
+header #index_logo{width:100px; padding-left:10px;}
+header #index_Menu{position: absolute; opacity: 0.9; left: 0px; top: 0px; width:70%; margin-left: -35%; left: 50%;  height: 60px; background: white; z-index:2;}
+header #index_Menu #index_Menu_menu{ font-size:12px; margin-left: 50px; float: left;}
+header #index_Menu #index_Menu_menu li{float: left;line-height:58px; }
+header #index_Menu #index_Menu_menu li a{display: block; color: black; border-bottom: 2px solid white; margin-right:20px;  padding:0px 15px 0px 15px; }
+header #index_Menu #index_Menu_menu li a:hover{display: block; color:#fd5032;border-bottom: 2px solid #fd5032;  padding:0px 15px 0px 15px; }
+header #index_Menu #index_Menu_menu li a:active{display: block;background:#fd5032; color: white; border-bottom: 2px solid #fd5032;  padding:0px 15px 0px 15px; }
+header #index_Menu #index_Menu_Login{float: right;}
+header #index_Menu #index_Menu_Login li{float: left; line-height: 60px;}
+header #index_Menu #index_Menu_Login li a{display: block; padding-right: 10px; color: #FD5032; font-size: 10px;}
+header #index_Menu #index_Menu_Login li a:hover{text-decoration: underline;}
+header{position: relative; width: 100%; height: 558px;}
+
+header .banner #index_banner{position: absolute; width: 100%; z-index:1;; left: 0; top: 0px;}
+header .banner #index_banner li{float: left; width: 100%; height:auto; display: none; position: absolute;}
+header .banner #index_banner li img{ width: 100%; height: 558px; position: absolute; left: 0; top: 0;}
+header #index_nav{position: absolute; z-index: 12; left: 50%; bottom: 230px; font-family: '宋体'; font-size:46px;width:529px; margin-left: -264.5px;  color: white;}
+header #index_form{position: absolute; width:25%; bottom: 170px; left: 50%; margin-left: -12.5%; z-index: 12;}
+header #index_form li{float: left;border: none;}
+header #index_circle{ position: absolute; z-index: 11; left:10px; top: 50%; margin-top: -167.5px;  width:110px; height:auto; }
+header #index_circle li{ width:110px; height: 60px; margin-bottom:3px;overflow: hidden; border: 2px solid rgba(255,255,255,0);}
+header #index_circle li img{ width:110px; height: 60px; overflow: hidden;}
+header #leftjian{height:558px; width:8%;position: absolute; left: 0px; top: 0px;background-image: linear-gradient(to right,rgba(0,0,0,0.4),rgba(0,0,0,0));}
+header #rightjian{height:558px; width:8%;position: absolute; right: 0px; top: 0px;background-image: linear-gradient(to left,rgba(0,0,0,0.4),rgba(0,0,0,0));}
+/*index_content*/
+#content1{width: 100%; margin: 0 auto;  background: #eeeeee;}
+#content1 #index_cont1{width: 70%; margin: 0 auto;  height: 370px; padding-top: 30px; }
+#content1 #index_cont1 #index_cont1_ul1{width: 100%; padding-top: 15px;}
+#content1 #index_cont1 #index_cont1_ul1 li{ float: left; width: 23.5%; margin-right:2%;}
+#content1 #index_cont1 #index_cont1_ul1 li dl{width: 100%;background: white; }
+#content1 #index_cont1 #index_cont1_ul1 li dl:hover{box-shadow: 3px 3px 4px #ccc;}
+#content1 #index_cont1 #index_cont1_ul1 li dl dt{width: 100%;overflow: hidden;}
+#content1 #index_cont1 #index_cont1_ul1 li dl dt img{width: 100%; height: auto;transition: all 0.6s; }
+#content1 #index_cont1 #index_cont1_ul1 li dl dt img:hover{transform:scale(1.5);-ms-transform:scale(1.5);-webkit-transform:scale(1.5);-o-transform:scale(1.5);-moz-transform:scale(1.5);}
+#content1 #index_cont1 #index_cont1_ul1 li dd{ padding: 5px 8px 0px 8px; margin: 0 auto; }
+#content1 #index_cont1 #index_cont1_ul1 li dd p{ font-size: 10px; color: #a7a6a6; line-height:16px;padding-top:5px;display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp:2;overflow: hidden;}
+#content1 #index_cont2{width: 100%; margin: 0 auto; padding-top: 30px;  background: white;}
+#content1 #index_cont2 #index_cont2_Cont2{ width: 70%; margin: 0 auto;}
+#content1 #index_cont2 #index_cont2_Cont2 #index_cont2_Cont2_send{float: right; width: 110px; text-align: center; height: 40px; line-height:40px; background: #FD5032; border-radius: 5px;}
+#content1 #index_cont2 #index_cont2_Cont2 #index_cont2_Cont2_send:hover{opacity: 0.8; cursor: pointer;}
+#content1 #index_cont2 #index_cont2_Cont2 .index_cont2_Cont2_ul1{height: 184px; overflow: hidden; margin-top: 20px;}
+#content1 #index_cont2 #index_cont2_Cont2 .index_cont2_Cont2_ul1:hover{background: #fbf9f9;cursor: pointer;}
+#content1 #index_cont2 #index_cont2_Cont2 .index_cont2_Cont2_ul1:hover h2{color: #FD5032;}
+#content1 #index_cont2 #index_cont2_Cont2 .index_cont2_Cont2_ul1 h2{padding: 3% 10% 0 3%; line-height: 20px;}
+#content1 #index_cont2 #index_cont2_Cont2 .index_cont2_Cont2_ul1 p{ display: block; height:60px; display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp:3;overflow: hidden;}
+#content1 #index_cont2 #index_cont2_Cont2 .index_cont2_Cont2_ul1 .index_cont2_Cont2_ul2{line-height: 30px; height: 30px; padding: 3% 0% 0 3%; }
+#content1 #index_cont2 #index_cont2_Cont2 .index_cont2_Cont2_ul1 .index_cont2_Cont2_ul2 li{float: left;}
+#content1 #index_cont2 #index_cont2_Cont2 .index_cont2_Cont2_ul1 .index_cont2_Cont2_ul2 li:nth-child(even){padding-right: 20px;}
+#content1 #index_cont3{width: 100%;  position:relative; height:500px; padding-top:70px; background: white;}
+#content1 #index_cont3 #index_cont3_redBg{ width: 50%; position: absolute; z-index:2; background: #FD5032; left: 50%; top:18%; margin-left: -25%; height:250px;}
+#content1 #index_cont3 #index_cont3_redBg article{position: absolute; width: 40%; height: 250px; right: 0px;}
+#content1 #index_cont3 #index_cont3_redBg article h2{position: absolute; left: 5%; top: 15%;}
+#content1 #index_cont3 #index_cont3_redBg article h2 a{color: black; text-decoration: underline;}
+#content1 #index_cont3 #index_cont3_redBg article p{position: absolute; width:85%; line-height: 20px; left:5%; top:30%; font-size: 10px;}
+#content1 #index_cont3 .index_cont3_company{position: absolute; width: 50%; left: 50%; top:75%; margin-left: -25%;}
+#content1 #index_cont3 .index_cont3_company:hover{box-shadow: 2px 2px 3px #EEEEEE; cursor: pointer;}
+#content1 #index_cont3 .index_cont3_company li{float: left;}
+#content1 #index_cont4{width:100%; padding-top: 0px;  background: white;}
+#content1 #index_cont4 .index_cont4_Cont4{width: 50%; margin: 0 auto; height:320px;}
+#content1 #index_cont4 .index_cont4_Cont4 ul{width: 100%;}
+#content1 #index_cont4 .index_cont4_Cont4 ul li{ text-align: center; float: left; transition: background 1s; background: #FD5032; padding: 0; width: 33.3%; height: 220px;}
+#content1 #index_cont4 .index_cont4_Cont4 ul li:hover{cursor: pointer; background:url(../img/index_cont4_adv1.jpg) no-repeat left bottom; color: white;}
+#content1 #index_cont4 .index_cont4_Cont4 ul li img{width: 20%; padding-top: 20%;}
+#content1 #index_cont4 .index_cont4_Cont4 ul li p{width: 100%; text-align: center; font-size: 16px; padding-top: 10%;}
+
+/*欢迎页面*/
+.welcome_wrap{text-align: center; display: flex; justify-content: center; align-items: center; height: 100%;}
+.welcome_wrap .div1{width:350px; height:450px; position: relative;}
+.welcome_wrap .div1 #div1_start{transition: background 0.5s; font-size: 14px; width:346px; height: 40px; text-align: center; line-height: 40px; border: 2px solid #FD5032; color:white;}
+.welcome_wrap .div1 #div1_start:hover{background: #FD5032; color: white;}
+.welcome_wrap .div1 .div1_ul1{width:76px; margin:15px auto;}
+.welcome_wrap .div1 .div1_ul1 li{float: left; width:20px; height:20px; line-height:18px; margin-right:8px; border-radius: 5px;}
+
+/*目的地攻略*/
+header #index_nav1{position: absolute; left: 0px; top: 0px;  font-family: '宋体'; font-size:40px; color: white;}
