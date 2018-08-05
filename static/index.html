@@ -92,49 +92,7 @@
 								</dd>
 							</dl>
 						</li>
-						<!-- <li>
-							<dl>
-								<dt><img src="img/index_cont1_adv1.jpg"></dt>
-								<dd>
-									<b>俄罗斯风情小镇</b>
-									<p>俄式风情极浓的旅游休闲小镇，特色服务以及中外宾客在小镇内感受到的“出境享受”都是独一无二的</p>
-									<a href="#" style=" padding: 5px 0px 5px 60%; display: block; font-size: 16px; color: #FD5032;">￥1699起</a>
-								</dd>
-							</dl>
-						</li>
-						<li>
-							<dl>
-								<dt><img src="img/index_cont1_adv2.jpg"></dt>
-								<dd>
-									<b>海南三亚</b>
-									<p>三亚在海南岛最南端，被人们称为"东方夏威夷"和"天下第一湾"。她宛如一颗美丽的浮珠镶嵌在南海碧波之中。</p>
-									<a href="#" style=" padding: 5px 0px 5px 60%; display: block; font-size: 16px; color: #FD5032;">￥3699起</a>
-								</dd>
-							</dl>
-						</li>
-						<li>
-							<dl>
-								<dt><img src="img/index_cont1_adv3.jpg"></dt>
-								<dd>
-									<b>天涯海角</b>
-									<p>传说一对热恋的男女分别来自两个有世仇的家族，他们的爱情遭到各自族人的反对，于是被迫逃到此地双双跳进大海，化成两块巨石，永远相对。</p>
-									<a href="#" style=" padding: 5px 0px 5px 60%; display: block; font-size: 16px; color: #FD5032;">￥2699起</a>
-								</dd>
-							</dl>
-						</li>
-						<li style="margin-right:0">
-							<dl>
-								<dt><img src="img/index_cont1_adv4.jpg"></dt>
-								<dd>
-									<b>新加坡金沙酒店</b>
-									<p>这个耗资40亿英镑打造、拥有室外泳池、观光平台、豪华赌场等高档设施的度假酒店正式对宾客开放。</p>
-									<a href="#" style=" padding: 5px 0px 5px 60%; display: block; font-size: 16px; color: #FD5032;">￥6699起</a>
-								</dd>
-							</dl>
-						</li> -->
-						
 					</ul>
-					
 				</div>
 				<div id="index_cont2">
 					<div id="index_cont2_Cont2">
@@ -149,58 +107,23 @@
 						<!--这里加上更多按钮-->
 						<p style="float:left; margin-top: 20px;"><a href="#"></a></p>
 						<div style="clear: both;width: 100%; height: 1px; background: #e0e0e0; margin: 5% 0 2% 0;"></div>
-						<ul class="index_cont2_Cont2_ul1">
-							<li style="width: 30%; overflow: hidden; float: left; text-align: center;"><img src="img/index_cont2_adv1.jpg" style="width:100%; height: 184px;"></li>
+						<ul class="index_cont2_Cont2_ul1" ng-repeat="item in customs">
+							<li style="width: 30%; overflow: hidden; float: left; text-align: center;"><img src="{{item.src}}" style="width:100%; height: 184px;"></li>
 							<li style="width: 70%; overflow: hidden; float: left;">
-								<h2>北纬21度，拥抱一“夏天”的风——“神雕侠侣”西双版纳漫游记</h2>
-								<p style="color:#A7A6A6;padding: 3% 10% 0 3%; line-height: 20px;">西双版纳的美丽，一半来自于她的多民族文化和风情，另外一半来自于她广袤、神秘的热带雨林。 一边是残阳余晖的急速下落，一边是明亮月光的缓缓升起。阳光滋养万物生长，也孕育出我们的美好心情。 带上童心进入主题乐园，做个长不大的孩子！ </p>
+								<h2>{{item.title}}</h2>
+								<p style="color:#A7A6A6;padding: 3% 10% 0 3%; line-height: 20px;">{{item.description}}</p>
 								<ul class="index_cont2_Cont2_ul2">
 									<li><img src="img/index_weizhi.png" style="width: 20px; vertical-align: middle;"></li>
-									<li>西双版纳</li>
+									<li>{{item.location}}</li>
 									<li><img src="img/index_head.png" style="width: 20px;vertical-align: middle;"></li>
-									<li style="color: #FD5032;">Roger</li>
+									<li style="color: #FD5032;">{{item.author}}</li>
 									<li><img src="img/index_number.png" style="width: 20px;vertical-align: middle;"></li>
 									<li>304409</li>
 									<li style="float: right;" class="index_cont3_ding1"><img src="img/index_top.png" style="width:30px; vertical-align: middle;"></li>
-									<li id="index_number1" style="float: right; color: #FD5032; padding-right: 10px;">20189</li>
+									<li id="index_number1" style="float: right; color: #FD5032; padding-right: 10px;">{{item.loveNumber}}</li>
 								</ul>
 							</li>
 						</ul>
-						<ul class="index_cont2_Cont2_ul1">
-							<li style="width: 30%; overflow: hidden; float: left; text-align: center;"><img src="img/index_cont2_adv2.jpg" style="width:100%; height: 184px;"></li>
-							<li style="width: 70%; overflow: hidden; float: left;">
-								<h2>它该有的样子是温泉、烟火和雪—北海道八日行：）</h2>
-								<p style="color:#A7A6A6;padding: 3% 10% 0 3%; line-height: 20px;">每一趟行程，总觉得该记录些什么，不是吃喝住行的攻略，也不是怎样好又省的游玩了哪些景点。去这世界的另一个地方，游走间拾掇落在心里的感受，可能是关于某一个国度和人文，某一种大自然的形态，某一个场景，某一处风景，某一个人物，或者是身边的那个人某一个举止，某一句言语。旅行不是打卡，每一趟收获的若仅仅是风景，那内心该多寂寥。 </p>
-								<ul class="index_cont2_Cont2_ul2">
-									<li><img src="img/index_weizhi.png" style="width: 20px; vertical-align: middle;"></li>
-									<li>重庆</li>
-									<li><img src="img/index_head.png" style="width: 20px;vertical-align: middle;"></li>
-									<li style="color: #FD5032;">John</li>
-									<li><img src="img/index_number.png" style="width: 20px;vertical-align: middle;"></li>
-									<li>2089</li>
-									<li style="float: right;" class="index_cont3_ding2"><img src="img/index_top.png" style="width:30px; vertical-align: middle;"></li>
-									<li id="index_number2" style="float: right; color: #FD5032; padding-right: 10px;">1235</li>
-								</ul>
-							</li>
-						</ul>
-						<ul class="index_cont2_Cont2_ul1">
-							<li style="width: 30%; overflow: hidden; float: left; text-align: center;"><img src="img/index_cont2_adv3.jpg" style="width:100%; height: 184px;"></li>
-							<li style="width: 70%; overflow: hidden; float: left;">
-								<h2>Vicky环游世界之【15天台湾慢旅+100种巷弄小吃】</h2>
-								<p style="color:#A7A6A6;padding: 3% 10% 0 3%; line-height: 20px;">行便是走，15天，我们用脚步丈量台湾。行走于巷弄，行走于市集，行走于都市。我们寻香——为著名美食而行走；我们访古——为人文历史遗迹而行走；我们探索——为下一个未知而行走。 </p>
-								<ul class="index_cont2_Cont2_ul2">
-									<li><img src="img/index_weizhi.png" style="width: 20px; vertical-align: middle;"></li>
-									<li>台湾</li>
-									<li><img src="img/index_head.png" style="width: 20px;vertical-align: middle;"></li>
-									<li style="color: #FD5032;">Vicky</li>
-									<li><img src="img/index_number.png" style="width: 20px;vertical-align: middle;"></li>
-									<li>2787</li>
-									<li style="float: right;" class="index_cont3_ding3"><img src="img/index_top.png" style="width:30px; vertical-align: middle;"></li>
-									<li id="index_number3" style="float: right; color: #FD5032; padding-right: 10px;">9723</li>
-								</ul>
-							</li>
-						</ul>
-						
 					</div>
 				</div>
 				<div id="index_cont3">
