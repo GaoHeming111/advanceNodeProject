@@ -1,5 +1,21 @@
 ----数据库里面不能存储明文密码，加密签名之后存储
 ----localhost:8080/admin/login --进去管理员登陆界面
+数组去重
+Array.prototype.unique3 = function(){
+ var res = [];
+ var json = {};
+ for(var i = 0; i < this.length; i++){
+  if(!json[this[i]]){
+   res.push(this[i]);
+   json[this[i]] = 1;
+  }
+ }
+ return res;
+}
+var arr = [112,112,34,'你好',112,112,34,'你好','str','str1'];
+alert(arr.unique3());
+
+
 定义：
 url		300字
 

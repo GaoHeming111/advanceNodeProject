@@ -5,8 +5,10 @@
   
 //    console.log(obj.webName);
 
-console.log(
-    ({x:1,
-      y:1
-     }).toString()
-    );
+// console.log(
+//     ({x:1,
+//       y:1
+//      }).toString()
+//     );
+
+console.log(typeof(undefined));
